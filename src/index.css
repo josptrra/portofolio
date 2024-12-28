@@ -1,0 +1,101 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.transisi {
+  @apply transition-all duration-500 ease-in-out;
+}
+
+.about-container {
+  @apply bg-about bg-cover bg-center bg-no-repeat;
+}
+
+.skills-container {
+  @apply bg-tech bg-cover bg-center bg-no-repeat pb-10;
+}
+
+.exp-layout {
+  @apply bg-experience bg-cover bg-center bg-no-repeat rounded-tl-[150px] rounded-br-[150px];
+}
+
+.exp-container {
+  @apply bg-experienceLight bg-cover bg-center bg-no-repeat rounded-tl-[150px] rounded-br-[130px];
+}
+
+.nav-container {
+  @apply sm:px-16 px-6 w-full flex items-center py-6 fixed top-0 z-20 bg-[#f4f4f6] sm:opacity-[0.97];
+}
+
+.hero-layout {
+  @apply relative flex sm:flex-row flex-col w-full h-screen mx-auto sm:bg-hero bg-hero-mobile overflow-hidden;
+}
+
+.hero-container {
+  @apply absolute inset-0 sm:top-[250px] top-[150px] lg:top-[150px] xl:top-[250px] sm:px-16 px-6 max-w-7xl mx-auto flex flex-row items-start justify-between gap-3;
+}
+
+.global-container {
+  @apply max-w-6xl py-20 md:py-28 p-6 mx-auto;
+}
+
+.project-card-container {
+  @apply relative flex items-center justify-center min-w-[210px] h-[420px] cursor-pointer card-shadow;
+}
+
+.project-card-titles {
+  @apply font-extrabold font-beckman uppercase w-[200px] h-[30px] whitespace-nowrap sm:text-[27px] text-[18px] text-[#d4d4d8] tracking-[1px] absolute z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0] leading-none z-20 text-center hidden lg:block text-start;
+}
+
+.experience-subtext {
+  @apply sm:text-[18px] text-[16px] text-[#9999a1] uppercase tracking-wider font-semibold font-poppins sm:pl-16 pl-[2rem];
+}
+
+.experience-headtext {
+  @apply text-[#1f1f1f] font-black md:text-[60px] sm:text-[48px] text-[30px] font-poppins sm:pl-16 pl-[2rem];
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  color-scheme: dark;
+}
+
+.nav-links::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 3px;
+  background: #292929;
+  margin: auto;
+  transition: 0.5s;
+}
+
+.nav-links:hover::after {
+  width: 70%;
+}
+
+.hash-span {
+  display: block;
+}
+
+.card-shadow {
+  box-shadow: rgba(155, 155, 155, 0.3) 0 2px 6px,
+    rgba(155, 155, 155, 0.22) 0 0 4px;
+  border-radius: 24px;
+}
+
+.vertical-timeline.vertical-timeline-custom-line::before {
+  background: rgb(66, 66, 66);
+  background: linear-gradient(
+    180deg,
+    rgba(66, 66, 66, 0.8) 40%,
+    rgba(234, 234, 236, 0.45) 100%
+  );
+}
+
+.vertical-timeline-element-icon {
+  box-shadow: 0 0 0 4px #afafafd2, inset 0 2px 0 rgba(0, 0, 0, 0.08),
+    0 3px 0 4px rgba(0, 0, 0, 0.05);
+}
